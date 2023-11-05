@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1Blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blue Layout"
+        android:textColor="#ffffffff"
+        android:background="#ff0000ff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <ListView
+        android:id="@+id/listView1Blue"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        />
+
+</LinearLayout>
