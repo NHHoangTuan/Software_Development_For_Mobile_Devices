@@ -11,10 +11,13 @@
         android:id="@+id/textView1Blue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Blue Layout"
-        android:textColor="#ffffffff"
-        android:background="#ff0000ff"
+        android:text="ID: "
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:background="#e1e8f5"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="3dp"
         />
 
     <ListView

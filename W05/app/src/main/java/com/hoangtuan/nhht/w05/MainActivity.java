@@ -25,7 +25,7 @@ public class MainActivity extends FragmentActivity implements MainCallbacks {
 
         // create a new RED fragment - show it
         ft = getSupportFragmentManager().beginTransaction();
-        redFragment = FragmentRed.newInstance("first-red");
+        redFragment = FragmentRed.newInstance("");
         ft.replace(R.id.main_holder_red, redFragment);
         ft.commit();
 

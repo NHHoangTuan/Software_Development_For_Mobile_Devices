@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1Red"
-        android:text="Red layout"
-        android:background="#ffff0000"
+        android:text=" "
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="#f7e9e9"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
 
@@ -21,13 +23,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="#f2e6e6"
         >
 
         <TextView
             android:id="@+id/txtFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ho ten: "
+            android:text="Họ tên: "
+            android:textSize="18dp"
+            android:paddingBottom="10dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
 
@@ -35,7 +41,9 @@
             android:id="@+id/txtClass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lop: "
+            android:text="Lớp: "
+            android:textSize="18dp"
+            android:paddingBottom="10dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
 
@@ -43,7 +51,9 @@
             android:id="@+id/txtAVG"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Diem trung binh: "
+            android:text="Điểm trung bình: "
+            android:textSize="18dp"
+            android:paddingBottom="10dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
 

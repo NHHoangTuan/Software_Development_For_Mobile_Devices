@@ -102,9 +102,9 @@ public class FragmentRed extends Fragment implements FragmentCallbacks {
     @Override
     public void onMsgFromMainToFragment(Student student, String msg) {
         txtRed.setText(student.getId());
-        txtFullName.setText("Ho ten: " + student.getFullName());
-        txtClass.setText("Lop: " + student.getClassName());
-        txtAVG.setText("Diem trung binh: " + student.getAvg());
+        txtFullName.setText("Họ tên: " + student.getFullName());
+        txtClass.setText("Lớp: " + student.getClassName());
+        txtAVG.setText("Điểm trung bình: " + student.getAvg());
 
         if (msg.equals("bottom")){
             btnNext.setAlpha(0.2f);

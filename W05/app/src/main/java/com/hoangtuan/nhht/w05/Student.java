@@ -39,22 +39,22 @@ public class Student {
 
     private static String generateRandomFullName() {
         String[] firstNameList = {
-                "Nguyen", "Tran", "Le", "Pham", "Huynh", "Ha", "Vo", "Dinh",
-                "Bui", "Vu", "Phan", "Dang", "Ho", "Nong"
+                "Nguyễn", "Trần", "Lê", "Phạm", "Huỳnh", "Hà", "Võ", "Đinh",
+                "Bùi", "Vũ", "Phan", "Đặng", "Hồ", "Nông"
         };
 
         String[] MaleNameList = {
-                "An", "Binh", "Cuong", "Dung", "Hung", "Khoa", "Linh", "Nam",
-                "Quang", "Son", "Thanh", "Trung", "Viet", "Xuan"
+                "An", "Bình", "Cường", "Dũng", "Hưng", "Khoa", "Linh", "Nam",
+                "Quang", "Sơn", "Thanh", "Trung", "Việt", "Xuân", "Thành"
         };
 
         String[] middleNameList = {
-                "Van", "Thi", "Thu", "Tien", "Xuan", "Anh"
+                "Văn", "Thị", "Thu", "Quốc", "Xuân", "Anh", "Hoàng"
         };
 
         String[] FemaleNameList = {
-                "Anh", "Bao", "Cam", "Dung", "Hanh", "Lan", "Mai", "Nga",
-                "Phuong", "Quyen", "Thao", "Trang", "Uyen", "Xinh"
+                "Anh", "Cẩm", "Dung", "Hạnh", "Lan", "Mai", "Nga",
+                "Phương", "Quyên", "Thảo", "Trang", "Uyên"
         };
 
         Random random = new Random();

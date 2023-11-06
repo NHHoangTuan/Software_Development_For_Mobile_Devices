@@ -93,7 +93,7 @@ public class FragmentBlue extends Fragment implements FragmentCallbacks{
                     if (i == 0) msg = "top";
                     else if (i == items.length - 1) msg = "bottom";
                     main.onMsgFromFragToMain(students[i], msg);
-                    txtBlue.setText(items[i]);
+                    txtBlue.setText("ID: " + items[i]);
 
                     adapter.setSelectedPosition(i);
 
@@ -149,7 +149,7 @@ public class FragmentBlue extends Fragment implements FragmentCallbacks{
         else if (index == items.length - 1) msg = "bottom";
         main.onMsgFromFragToMain(students[index],msg);
 
-        txtBlue.setText(items[index]);
+        txtBlue.setText("ID: " + items[index]);
 
         adapter.setSelectedPosition(index);
 
