@@ -1,1 +1,0 @@
-# Software_Development_For_Mobile_Devices
