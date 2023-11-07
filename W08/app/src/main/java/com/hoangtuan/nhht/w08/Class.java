@@ -10,12 +10,11 @@ public class Class {
         this.className = className;
     }
 
-    int getIdClass(){
+    int getClassID(){
         return this.classID;
     }
 
     String getClassName(){
         return this.className;
     }
-
 }

@@ -9,7 +9,9 @@ public class Student {
 
     private int classID;
 
-    public Student(String fullName, String studentID, int classID, double avg){
+    private int thumnails;
+
+    public Student(String studentID, String fullName, int classID, double avg){
         this.fullName = fullName;
         this.studentID = studentID;
         this.classID = classID;
@@ -30,6 +32,14 @@ public class Student {
 
     double getAvg(){
         return this.avg;
+    }
+
+    int getThumnails(){
+        return thumnails;
+    }
+
+    void setThumnails(int thumnails){
+        this.thumnails = thumnails;
     }
 
 }

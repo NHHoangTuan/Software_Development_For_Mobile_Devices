@@ -17,22 +17,24 @@ import java.util.Arrays;
 public class CustomAdapter extends BaseAdapter {
 
     Context context;
-    String[] items;
-    int[] icons;
+    //String[] items;
+    //int[] icons;
+    Student[]students;
     LayoutInflater inflater;
 
     private int selectedPosition = -1;
-    public CustomAdapter(Context context, String[] items, int[] icons){
+    public CustomAdapter(Context context, Student[] students){
         super();
         this.context = context;
-        this.items = items;
-        this.icons = icons;
+        this.students = students;
+        //this.items = items;
+        //this.icons = icons;
         inflater = (LayoutInflater.from(context));
     }
 
     @Override
     public int getCount() {
-        return items.length;
+        return students.length;
     }
 
     @Override
@@ -52,8 +54,8 @@ public class CustomAdapter extends BaseAdapter {
         TextView id = (TextView) view.findViewById(R.id.txtID);
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
 
-        id.setText(items[i]);
-        icon.setImageResource(icons[i]);
+        id.setText(students[i].getStudentID());
+        icon.setImageResource(students[i].getThumnails());
 
         if (i == selectedPosition) {
             view.setBackgroundColor(Color.parseColor("#b0d9f5"));

@@ -20,6 +20,7 @@
         android:id="@+id/txtID"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textColor="@color/black"
         />
 
 </LinearLayout>
