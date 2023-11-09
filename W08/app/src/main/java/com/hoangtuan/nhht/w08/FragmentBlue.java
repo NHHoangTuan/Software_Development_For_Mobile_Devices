@@ -21,7 +21,6 @@ import java.util.Random;
 
 public class FragmentBlue extends Fragment implements FragmentCallbacks {
 
-    //final int MAXSTUDENTNUMBER = 30;
     MainActivity main;
 
     CustomAdapter adapter;
@@ -34,8 +33,7 @@ public class FragmentBlue extends Fragment implements FragmentCallbacks {
 
     private Student[] students = new Student[5];
     private Class[] classes = new Class[1];
-    //private String[] items = new String[MAXSTUDENTNUMBER];
-    //private int[] avatar = new int[MAXSTUDENTNUMBER];
+
 
     public Student[] getStudents(){
         return this.students;
@@ -146,23 +144,6 @@ public class FragmentBlue extends Fragment implements FragmentCallbacks {
         });
         return layout_blue;
     }
-
-    /*private void createData() {
-        int totalItem = MAXSTUDENTNUMBER;
-        for (int i = 0; i < totalItem; i++) {
-            students[i] = Student.randomStudent();
-        }
-
-        for (int i = 0; i < totalItem; i++) {
-            items[i] = students[i].getId();
-        }
-
-        Random random = new Random();
-
-        for (int i = 0; i < totalItem; i++) {
-            avatar[i] = imageResource[random.nextInt(imageResource.length)];
-        }
-    }*/
 
 
     @Override

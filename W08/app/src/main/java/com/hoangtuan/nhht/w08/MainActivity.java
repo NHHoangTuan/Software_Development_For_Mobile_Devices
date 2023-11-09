@@ -59,9 +59,6 @@ public class MainActivity extends FragmentActivity implements MainCallbacks {
         File storagePath = getApplication().getFilesDir();
         myDataBasePath = storagePath + "/" + "myDataBase";
 
-        /*createDataBase();
-        buildFragment();*/
-
         ActivityCompat.requestPermissions(MainActivity.this,
                 new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE,
                         android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
