@@ -24,7 +24,6 @@ public class FragmentRed extends Fragment implements FragmentCallbacks {
     Button btnPrevious;
     Button btnNext;
     Button btnLast;
-    int currentPos;
     private Student[] students;
     private Class[] classes;
 
@@ -61,6 +60,7 @@ public class FragmentRed extends Fragment implements FragmentCallbacks {
         btnNext = (Button) view_layout_red.findViewById(R.id.btnNext);
         btnPrevious = (Button) view_layout_red.findViewById(R.id.btnPrevious);
 
+
         students = main.students;
         classes = main.classes;
 
@@ -71,6 +71,7 @@ public class FragmentRed extends Fragment implements FragmentCallbacks {
         }catch (Exception ex){
             Log.e("RED BUNDLE ERROR – ", "" + ex.getMessage());
         }
+
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

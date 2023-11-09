@@ -1,9 +1,12 @@
 package com.hoangtuan.nhht.w08;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.pm.PackageManager;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -15,7 +18,6 @@ import java.io.File;
 
 public class MainActivity extends FragmentActivity implements MainCallbacks {
 
-    //TextView label1;
     FragmentTransaction ft;
     FragmentBlue blueFragment;
     FragmentRed redFragment;
@@ -57,14 +59,27 @@ public class MainActivity extends FragmentActivity implements MainCallbacks {
         File storagePath = getApplication().getFilesDir();
         myDataBasePath = storagePath + "/" + "myDataBase";
 
-        createDataBase();
-        buildFragment();
-        /*label1 = (TextView) findViewById(R.id.label1);
-        File storagePath = getApplication().getFilesDir();
-        String path = Environment.getExternalStorageDirectory().getPath();
+        /*createDataBase();
+        buildFragment();*/
 
-        label1.setText(path);*/
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE,
+                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
 
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 1){
+            // If request is cancelled, the result arrays are empty.
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                createDataBase();
+                buildFragment();
+            } else {
+                Toast.makeText(MainActivity.this, "Permission denied!", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     @Override
